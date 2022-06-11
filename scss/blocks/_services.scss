@@ -1,0 +1,74 @@
+.services {
+    
+    // .services__inner-container
+    
+    &__inner-container {
+        max-width: 1151px;
+    }
+    
+    // .services__container
+    
+    &__container {
+        padding-top: 126px;
+        background-image: url(./../images/Group.png);
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        margin-bottom: 200px;
+    }
+    
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        
+        &__container {
+            background-image: url(./../images/Group.png);
+        }
+    } 
+    
+    // .services__list
+    
+    &__list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+    
+    // .services__item
+    
+    &__item {
+        width: 255px;
+    }
+    
+    // .services__item-heading
+    
+    &__item-heading {
+        text-align: center;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+        margin: 0;
+        margin-top: 72px;
+        margin-bottom: 24px;
+    }
+    
+    // .services__item-text
+    
+    &__item-text {
+        text-align: center;
+        font-family: 'Barlow';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+        margin: 0;
+    }
+}
