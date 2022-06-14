@@ -1,4 +1,14 @@
 .hero {
+    &__container {
+        // width: 1280px;
+        // height: 600px;
+        background-image: url(./../images/coffee_bg_image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 117px 702px 117px 85px;
+        margin-bottom: 136px;
+    }
     // .hero__left-wrapper
     
     &__left-wrapper {
@@ -51,31 +61,22 @@
     
     // .container__bg-image
     
-    &__bg-image {
-        width: 1280px;
-        height: 600px;
-        background-image: url(./../images/coffee_bg_image.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 117px 702px 117px 85px;
-        margin-bottom: 136px;
-    }
     
     // .container__bg-img
     
     &__bg-img {
-        width: 1280px;
-        height: 450px;
+        // width: 1280px;
+        // height: 450px;
         background-image: url(./../images/coffee_bg_image2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 137px 750px 137px 85px;
         margin-bottom: 168px;
     }
-
+    
     &__image {
-        width: 1280px;
-        height: 450px;
+        // width: 1280px;
+        // height: 450px;
         background-image: url(./../images/coffee_bg_image3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -83,25 +84,166 @@
         margin-bottom: 168px;
     }
     
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (   min--moz-device-pixel-ratio: 2),
-    only screen and (     -o-min-device-pixel-ratio: 2/1),
-    only screen and (        min-device-pixel-ratio: 2),
-    only screen and (                min-resolution: 192dpi),
-    only screen and (                min-resolution: 2dppx) { 
-        
-        &__bg-image {
-            background-image: url(./../images/coffee_bg_image@2x.jpg);
-        }
-
-        &__bg-img {
-            background-image: url(./../images/coffee_bg_image2@2x.jpg);
-        }
-
-        &__image {
-            background-image: url(./../images/coffee_bg_image3@2x.jpg);
-        }
-    } 
 }
 
+@media only screen and (max-width: 768px) {
+    .hero {
+        &__container {
+            // width: 689px;
+            // height: 500px;
+            background-image: url(./../images/coffee_bg_image_table.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 104px 233px 104px 58px;
+            margin-bottom: 136px;
+        }
+        
+        &__container-img {
+            // width: 1280px;
+            // height: 450px;
+            background-image: url(./../images/coffee_bg_image2_table.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 118px 233px 118px 58px;
+            margin-bottom: 168px;
+        }
+        
+        &__container-image {
+            // width: 1280px;
+            // height: 450px;
+            background-image: url(./../images/coffee_bg_image3_table.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 127px 233px 127px 58px;
+            margin-bottom: 168px;
+        }
+
+        // .hero__left-wrapper
+        
+        &__left-wrapper {
+            width: 398px;
+        }
+        
+        // .hero__heading
+        
+        &__heading {
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 48px;
+            color: #FEFCF7;
+            margin-bottom: 32px;
+        }
+        
+        // .hero__text
+        
+        &__text {
+            width: 398px;
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FEFCF7;
+            opacity: 0.8;
+            margin-bottom: 55px;
+        }
+        
+        // .hero__link
+        
+        &__link {
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FEFCF7;
+            background: #0E8784;
+            cursor: pointer;
+            border-radius: 6px;
+            padding: 15px 31px;
+        }
+        
+        &__link:hover {
+            background: #66D2CF;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+    .hero {
+        &__container {
+            // width: 689px;
+            // height: 500px;
+            background-image: url(./../images/coffee_bg_image_mobile.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 100px 24px;
+            margin-bottom: 136px;
+        }
+        
+        &__container-img {
+            // width: 1280px;
+            // height: 450px;
+            background-image: url(./../images/coffee_bg_image2_table.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 118px 233px 118px 58px;
+            margin-bottom: 168px;
+        }
+        
+        &__container-image {
+            // width: 1280px;
+            // height: 450px;
+            background-image: url(./../images/coffee_bg_image3_table.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 127px 233px 127px 58px;
+            margin-bottom: 168px;
+        }
+
+        // .hero__left-wrapper
+        
+        &__left-wrapper {
+            width: 279px;
+        }
+        
+        // .hero__heading
+        
+        &__heading {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 40px;
+            color: #FEFCF7;
+            margin-bottom: 32px;
+        }
+        
+        // .hero__text
+        
+        &__text {
+            width: 279px;
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FEFCF7;
+            opacity: 0.8;
+            margin-bottom: 55px;
+        }
+        
+        // .hero__link
+        
+        &__link {
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FEFCF7;
+            background: #0E8784;
+            cursor: pointer;
+            border-radius: 6px;
+            padding: 15px 31px;
+        }
+        
+        &__link:hover {
+            background: #66D2CF;
+        }
+    }
+    
+}
